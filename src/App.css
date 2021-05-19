@@ -1,38 +1,157 @@
-.App {
-  text-align: center;
+/* Vendor Prefixes */
+::-webkit-input-placeholder {
+	text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:-moz-placeholder {
+	/* Firefox 18- */
+	text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-moz-placeholder {
+	/* Firefox 19+ */
+	text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+:-ms-input-placeholder {
+	text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+/* Repeated styles */
+.accent {
+	background: rgba(0, 0, 0, 0.3);
+	border: 2px solid rgba(187, 187, 199, 0.35);
+	border-radius: 10px;
+}
+/* Sizing */
+.big_font {
+	font-size: clamp(5rem, 12vw, 8rem);
+}
+.med_font {
+	font-size: clamp(2.75rem, 3.25vw, 3.25rem);
+}
+.reg_font {
+	font-size: clamp(1.75rem, 2.5vw, 2rem);
+	text-transform: capitalize;
+}
+.big_font sup {
+	font-size: 50%;
+	margin-bottom: 20%;
+}
+.col {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+/*  */
+
+body {
+	font-family: Optima, sans-serif;
+	font-weight: 600;
+	background: #0a1f44;
+	height: 100vh;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.418));
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+sup {
+	font-size: 60%;
+
+	margin: 0 0 1vw 0.5vw;
+}
+
+.main-container {
+	background-image: url(./images/furtado.jpg);
+	overflow-y: auto;
+	white-space: normal;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+
+	align-items: center;
+	flex-direction: column;
+}
+
+section {
+	display: flex;
+	flex: 1 1 100%;
+	align-items: center;
+	justify-content: center;
+}
+section > * {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	white-space: nowrap;
+}
+.search {
+	outline: none;
+	width: clamp(400px, 45%, 1200px);
+	font-size: 1.2rem;
+	padding: min(1rem, 2vw);
+	border-radius: 20px;
+	border: 1px solid #000;
+	margin: 5%;
+	background: rgba(235, 235, 240, 0.85);
+}
+
+.weather-card {
+	width: clamp(300px, 85%, 1200px);
+	height: min(1800px, 75%);
+	padding: 0 1rem;
+	margin-bottom: 50px;
+
+	background: rgba(10, 0, 0, 0.431);
+
+	border-radius: 25px;
+	color: rgb(235, 235, 240);
+}
+
+.city-name {
+	font-size: clamp(2.5rem, 8vw, 6rem);
+}
+.city-name sup {
+	padding: 0.5rem;
+	font-size: 60%;
+	border-radius: 10px;
+	border: 2px solid rgba(187, 187, 199, 0.35);
+	background: rgba(0, 0, 0, 0.3);
+	margin: 0 0 5vw 1vw;
+}
+/* .currentTemp {
+	font-size: clamp(7.5rem, 15vw, 10rem);
+} */
+.weather-module {
+	background: rgba(0, 0, 0, 0.3);
+	border-radius: 2 0px;
+
+	height: 25%;
+	font-weight: bold;
+	padding: 1rem;
+}
+.weather-module > * {
+	flex: 1 1 100%;
+	white-space: nowrap;
+}
+
+.weather-module + .weather-module {
+	border-top: 0;
+	border-radius: 0 0 25px 25px;
+}
+
+.arrow {
+	margin-right: 2vw;
+	transform: scale(1.5);
+}
+.offset {
+	margin-bottom: -5rem;
+	margin-top: 8vw;
+}
+.details > * + * {
+	border-top: 2px solid rgba(187, 187, 199, 0.35);
 }
