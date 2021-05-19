@@ -113,7 +113,7 @@ section > * {
 }
 
 .city-name {
-	font-size: clamp(2.5rem, 8vw, 6rem);
+	font-size: clamp(2rem, 8vw, 6rem);
 }
 .city-name sup {
 	padding: 0.5rem;
