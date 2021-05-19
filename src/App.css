@@ -91,7 +91,7 @@ section > * {
 }
 .search {
 	outline: none;
-	width: clamp(95%, 45%, 1200px);
+	width: clamp(85%, 45%, 1200px);
 	font-size: 1.2rem;
 	padding: min(1rem, 2vw);
 	border-radius: 20px;
