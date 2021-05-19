@@ -28,10 +28,10 @@
 	font-size: clamp(5rem, 12vw, 8rem);
 }
 .med_font {
-	font-size: clamp(2.75rem, 3.25vw, 3.25rem);
+	font-size: clamp(2rem, 3.25vw, 3.25rem);
 }
 .reg_font {
-	font-size: clamp(1.75rem, 2.5vw, 2rem);
+	font-size: clamp(1.25rem, 2.5vw, 2rem);
 	text-transform: capitalize;
 }
 .big_font sup {
@@ -91,7 +91,7 @@ section > * {
 }
 .search {
 	outline: none;
-	width: clamp(400px, 45%, 1200px);
+	width: clamp(95%, 45%, 1200px);
 	font-size: 1.2rem;
 	padding: min(1rem, 2vw);
 	border-radius: 20px;
