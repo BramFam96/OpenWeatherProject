@@ -36,7 +36,6 @@
 }
 .big_font sup {
 	font-size: 50%;
-	margin-bottom: 20%;
 }
 .col {
 	display: flex;
@@ -60,7 +59,7 @@ body {
 sup {
 	font-size: 60%;
 
-	margin: 0 0 1vw 0.5vw;
+	margin: 0 0 1vw 0;
 }
 
 .main-container {
@@ -102,7 +101,7 @@ section > * {
 
 .weather-card {
 	width: clamp(300px, 85%, 1200px);
-	height: min(1800px, 75%);
+	height: max(1800px, 75%);
 	padding: 0 1rem;
 	margin-bottom: 50px;
 
@@ -117,7 +116,7 @@ section > * {
 }
 .city-name sup {
 	padding: 0.5rem;
-	font-size: 60%;
+	font-size: 50%;
 	border-radius: 10px;
 	border: 2px solid rgba(187, 187, 199, 0.35);
 	background: rgba(0, 0, 0, 0.3);
