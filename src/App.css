@@ -149,7 +149,7 @@ section > * {
 }
 .offset {
 	margin-bottom: -5rem;
-	margin-top: 8vw;
+	
 }
 .details > * + * {
 	border-top: 2px solid rgba(187, 187, 199, 0.35);
