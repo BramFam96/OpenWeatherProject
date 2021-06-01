@@ -45,13 +45,14 @@
 /*  */
 
 body {
+	overflow: hidden;
 	font-family: Optima, sans-serif;
 	font-weight: 600;
 	background: #0a1f44;
-	height: 100vh;
-	width: 100%;
-	margin: 0;
-	padding: 0;
+	height: 100%;
+	width: 100vw;
+	margin: 0px;
+	padding: 0px;
 	box-sizing: border-box;
 	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.418));
 }
@@ -61,21 +62,42 @@ sup {
 
 	margin: 0 0 1vw 0;
 }
-
+.currentTemp > sup {
+	margin: 0 0 3vw 0vw;
+}
 .main-container {
 	background-image: url(./images/furtado.jpg);
-	overflow-y: auto;
+	overflow-y: hidden;
 	white-space: normal;
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
-	width: 100%;
+	width: 100vw;
 	display: flex;
 
 	align-items: center;
 	flex-direction: column;
 }
+.search {
+	outline: none;
+	width: clamp(75vw, 60vw, 1200px);
+	font-size: 1.2rem;
+	padding: min(1rem, 2vw);
+	border-radius: 20px;
+	border: 1px solid #000;
+	margin: 5%;
+	background: rgba(235, 235, 240, 0.85);
+}
 
+.weather_card {
+	width: clamp(300px, 85vw, 1200px);
+	height: max(1800px, 75%);
+	padding: 0 1rem;
+	background: rgba(10, 0, 0, 0.431);
+	border-radius: 25px;
+	color: rgb(235, 235, 240);
+	margin-bottom: 50px;
+}
 section {
 	display: flex;
 	flex: 1 1 100%;
@@ -88,46 +110,10 @@ section > * {
 	justify-content: center;
 	white-space: nowrap;
 }
-.search {
-	outline: none;
-	width: clamp(85%, 45%, 1200px);
-	font-size: 1.2rem;
-	padding: min(1rem, 2vw);
-	border-radius: 20px;
-	border: 1px solid #000;
-	margin: 5%;
-	background: rgba(235, 235, 240, 0.85);
-}
 
-.weather-card {
-	width: clamp(300px, 85%, 1200px);
-	height: max(1800px, 75%);
-	padding: 0 1rem;
-	margin-bottom: 50px;
-
-	background: rgba(10, 0, 0, 0.431);
-
-	border-radius: 25px;
-	color: rgb(235, 235, 240);
-}
-
-.city-name {
-	font-size: clamp(2rem, 8vw, 6rem);
-}
-.city-name sup {
-	padding: 0.5rem;
-	font-size: 50%;
-	border-radius: 10px;
-	border: 2px solid rgba(187, 187, 199, 0.35);
-	background: rgba(0, 0, 0, 0.3);
-	margin: 0 0 5vw 1vw;
-}
-/* .currentTemp {
-	font-size: clamp(7.5rem, 15vw, 10rem);
-} */
 .weather-module {
 	background: rgba(0, 0, 0, 0.3);
-	border-radius: 2 0px;
+	border-radius: 20px;
 
 	height: 25%;
 	font-weight: bold;
@@ -140,17 +126,30 @@ section > * {
 
 .weather-module + .weather-module {
 	border-top: 0;
-	border-radius: 0 0 25px 25px;
+	border-radius: 20px;
 }
-
+.city_name {
+	font-size: clamp(2rem, 8vw, 6rem);
+}
+.city_name sup {
+	padding: 0.5rem;
+	font-size: 50%;
+	border-radius: 10px;
+	border: 2px solid rgba(187, 187, 199, 0.35);
+	background: rgba(0, 0, 0, 0.3);
+	margin: 0 0 8vw 1vw;
+}
 .arrow {
 	margin-right: 2vw;
 	transform: scale(1.5);
 }
 .offset {
 	margin-bottom: -5rem;
-	
+}
+.details {
+	border: 5px solid rgba(187, 187, 199, 0.5);
+	border-radius: 20px;
 }
 .details > * + * {
-	border-top: 2px solid rgba(187, 187, 199, 0.35);
+	border-top: 5px solid rgba(187, 187, 199, 1);
 }

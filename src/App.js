@@ -10,6 +10,7 @@ import './App.css';
 const App = () => {
 	const [query, setQuery] = useState('');
 	const [weather, setWeather] = useState({});
+	const [temp, setTemp] = useState('');
 
 	const search = async (e) => {
 		if (e.key === 'Enter') {
@@ -23,7 +24,7 @@ const App = () => {
 			setQuery('');
 		}
 	};
-
+	
 	return (
 		<div className='main-container'>
 			<Search query={query} setQuery={setQuery} search={search} />

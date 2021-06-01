@@ -1,9 +1,10 @@
 import Temp from './Temp';
 import Range from './Range';
 
+
 function CurrentWeather({ currentTemp, lowTemp, highTemp }) {
 	return (
-		<section className='weather-module accent blue'>
+		<section className='weather-module accent '>
 			{/* Current temp */}
 			<Temp currentTemp={currentTemp} />
 			{/* Current Range */}

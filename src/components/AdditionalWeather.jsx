@@ -1,6 +1,6 @@
 import React from 'react';
 import FeelsLike from './FeelsLike';
-import Humidity from './Humidity';
+import Humidity from './Details';
 
 function AdditionalWeather({
 	humidity,

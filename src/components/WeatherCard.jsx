@@ -2,6 +2,8 @@ import City from './City';
 import WeatherInfo from './CurrentWeather';
 import AdditionalWeather from './AdditionalWeather';
 
+
+
 function WeatherCard({
 	cityName,
 	countryName,
@@ -16,7 +18,7 @@ function WeatherCard({
 	windDeg,
 }) {
 	return (
-		<main className='weather-card '>
+		<main className='weather_card'>
 			{/* City */}
 			<City cityName={cityName} countryName={countryName} />
 			{/* Current weather info */}

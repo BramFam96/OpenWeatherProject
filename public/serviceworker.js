@@ -2,6 +2,7 @@ const CACHE_NAME = 'version-1';
 const self = this;
 
 //Service Worker Installation
+//Logic
 const cacheResources = async () => {
 	const urlsToCache = ['index.html', 'offline.html'];
 	try {
@@ -12,9 +13,10 @@ const cacheResources = async () => {
 		console.log('Failed to cache data');
 	}
 };
-
+//Call
 self.addEventListener('install', (event) => event.waitUntil(cacheResources()));
-//Listener
+//SW request Listener
+//Logic
 
 const cachedResource = async (req) => {
 	try {
@@ -27,12 +29,15 @@ const cachedResource = async (req) => {
 		return fetch('offline.html');
 	}
 };
+//Call
 self.addEventListener('fetch', (event) =>
 	event.respondWith(cachedResource(event.request))
 );
 
 // //Service Worker Activation
-const cacheWhitelist = [CACHE_NAME];
+//Logic
+const cacheWhitelist = [];
+cacheWhitelist.push(CACHE_NAME);
 const cacheMap = async (cacheNames) => {
 	try {
 		await caches.keys();
@@ -49,6 +54,7 @@ const cacheMap = async (cacheNames) => {
 		console.log('Whitelist has failed to update');
 	}
 };
+//Call
 self.addEventListener('activate', (event) =>
 	event.waitUntil(cacheMap(cacheWhitelist))
 );
