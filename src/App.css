@@ -67,7 +67,7 @@ sup {
 }
 .main-container {
 	background-image: url(./images/furtado.jpg);
-	overflow-y: hidden;
+	overflow-x: hidden;
 	white-space: normal;
 	background-size: cover;
 	background-position: center;
