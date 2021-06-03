@@ -1,14 +1,5 @@
-<h1 align="center">OpenWeatherAPI Project</h1>
+<h1 align="center">OpenWeatherAPI PWA Project</h1>
 
-
-
-<!-- Status -->
-
-<!-- <h4 align="center"> 
-	🚧  Weather 🚀 Under construction...  🚧
-</h4> 
-
-<hr> -->
 
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
@@ -20,7 +11,11 @@
   <a href="https://github.com/BramFam96/" target="_blank">Author</a>
 </p>
 
-<br>
+## :white_check_mark: Status
+
+<h4 > 
+	🚀 &#xa0; | &#xa0; OpenWeather PWA is <a href="https://open-weather-project-hwv7r.ondigitalocean.app/">Live </a>✔️!&#xa0; | &#xa0; 🚀
+</h4>
 
 ## :dart: About ##
 
