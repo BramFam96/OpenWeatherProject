@@ -2,8 +2,10 @@
    
   #Demo
   
-    The primary motivation for this project was to create a progressive web app while getting comfortable
-    with common workflow tasks such as accessing and displaying API data, managing version control through
+    The primary motivation for this project was
+    to create a progressive web app while getting comfortable
+    with common workflow tasks such as accessing and displaying
+    API data, managing version control through
     github, and deploying to a cloud-based provider.
   #Build Status
   
@@ -18,8 +20,8 @@
     secure http calls, live-updates;
   #How-to-use
   
-    Simply enter a valid city name and the application will return
-    current weather information from the OpenWeatherAPi;
+    Simply enter a valid city name and the application will 
+    return current weather information from the OpenWeatherAPi;
   #License
   
     MIT &c; Matthew Bramlett
