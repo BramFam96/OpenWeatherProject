@@ -1,0 +1,62 @@
+body {
+	overflow: hidden;
+	font-family: Optima, sans-serif;
+	font-weight: 600;
+	background: #0a1f44;
+	height: 100%;
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.418));
+}
+.app_container {
+	height: 100vh;
+	width: 100vw;
+	background-image: url(../images/furtado.jpg);
+	overflow-x: hidden;
+	white-space: normal;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+sup {
+	font-size: 75%;
+
+	margin: 0 0 1vw 0;
+}
+
+.big_font {
+	font-size: clamp(4rem, 12vw, 10rem);
+}
+
+.big_font sup {
+	font-size: 50%;
+}
+
+.med_font {
+	font-size: clamp(1.5rem, 4vw, 3rem);
+}
+
+.reg_font {
+	font-size: clamp(1.2rem, 2vw, 2rem);
+}
+
+.cap {
+	text-transform: capitalize;
+}
+
+.col {
+	display: flex;
+
+	flex-direction: column;
+	text-align: center;
+}
+
+.accent_bg {
+	background: rgba(0, 0, 0, 0.3);
+	border: 2px solid rgba(187, 187, 199, 0.35);
+	border-radius: 10px;
+}

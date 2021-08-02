@@ -1,0 +1,15 @@
+.temps {
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+.arrow {
+	margin-right: 2vw;
+	transform: scale(1.5);
+}
+.feelsLike {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-right: 2.5vw;
+}

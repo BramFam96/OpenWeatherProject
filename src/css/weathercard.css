@@ -1,0 +1,40 @@
+.weather_card {
+	width: clamp(300px, 90vw, 1200px);
+	height: max(1800px, 75%);
+	padding: 0 1rem;
+	background: rgba(10, 0, 0, 0.431);
+	border-radius: 25px;
+	color: rgb(235, 235, 240);
+	margin-bottom: 50px;
+}
+section {
+	display: flex;
+	flex: 1 1 100%;
+	align-items: center;
+	justify-content: center;
+}
+section > * {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	white-space: nowrap;
+}
+
+.weather_card__section {
+	background: rgba(0, 0, 0, 0.3);
+	border-radius: 20px;
+	gap: 5vw;
+	margin-bottom: 1rem;
+	height: 25%;
+	font-weight: bold;
+	padding: min(5vw, 3rem);
+}
+.weather_card__section > * {
+	flex: 1 1 100%;
+	white-space: nowrap;
+}
+
+.weather_card__section + .weather_card__section {
+	border-top: 0;
+	border-radius: 20px;
+}

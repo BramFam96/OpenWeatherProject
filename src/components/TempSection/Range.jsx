@@ -2,7 +2,7 @@ import { BiUpArrow, BiDownArrow } from 'react-icons/bi';
 
 function Range({ lowTemp, highTemp }) {
 	return (
-		<section className='temp-range col'>
+		<section className='col'>
 			<p className='med_font'>
 				<BiUpArrow
 					className='high arrow'

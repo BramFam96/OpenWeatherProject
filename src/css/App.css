@@ -1,0 +1,26 @@
+@import './presets.css';
+@import './search.css';
+@import './weathercard.css';
+@import './tempsection.css';
+
+h3 {
+	line-height: 0;
+	margin-bottom: 0;
+}
+
+.city {
+	font-size: clamp(3rem, 10vw, 6.5rem);
+	margin-left: 1vw;
+}
+.city_sup {
+	padding: 0.5rem;
+	font-size: clamp(1rem, 4vw, 3rem);
+	border-radius: 10px;
+	border: 2px solid rgba(187, 187, 199, 0.35);
+	background: rgba(0, 0, 0, 0.3);
+	margin: 0 0 5vw 1vw;
+}
+
+.weather-info-icon {
+	transform: scale(1.2);
+}
