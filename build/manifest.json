@@ -1,0 +1,16 @@
+{
+	"short_name": "Matt's weather App",
+	"name": "Custom Weather PWA",
+	"icons": [
+		{
+			"src": "/images/weatherlogo.png",
+			"type": "image/png",
+			"sizes": "1024x1024 512x512",
+			"purpose": "maskable any"
+		}
+	],
+	"start_url": ".",
+	"display": "standalone",
+	"theme_color": "#000000",
+	"background_color": "#ffffff"
+}
