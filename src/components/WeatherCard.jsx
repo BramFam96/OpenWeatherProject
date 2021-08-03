@@ -19,7 +19,7 @@ function WeatherCard({ weatherObj }) {
 		const forecastCoords = await coord
 		const { lat, lon } = forecastCoords
 		const forecastData = await fetchForecast(lat, lon)
-		console.log(forecastData)
+		// console.log(forecastData)
 		setForecast(forecastData)
 	}
 

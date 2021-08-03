@@ -40,7 +40,7 @@ const App = () => {
 	const handleFetchWeather = async (query) => {
 		const data = await fetchWeather(query)
 		setWeather(data)
-		console.log(data)
+		// console.log(data)
 	}
 
 	return (
