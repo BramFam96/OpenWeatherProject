@@ -3,7 +3,7 @@ import { fetchForecast } from '../api/fetchForecast'
 //Component Imports:
 
 import Heading from './Heading/Heading'
-import Alert from './Alert'
+// import Alert from './Alert'
 import TempSection from './TempSection/TempSection'
 import WeatherDetails from './WeatherDetails/WeatherDetails'
 
