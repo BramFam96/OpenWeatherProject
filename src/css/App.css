@@ -2,7 +2,7 @@
 @import './search.css';
 @import './weathercard.css';
 @import './tempsection.css';
-
+@import './forecast.css';
 h3 {
 	line-height: 0;
 	margin-bottom: 0;

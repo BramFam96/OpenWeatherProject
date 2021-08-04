@@ -16,21 +16,17 @@ const App = () => {
 	//Local Storage Get Method
 
 	useEffect(() => {
-		const weatherJSON = localStorage.getItem(LOCAL_STORAGE_KEY)
-		weatherJSON != null ? setWeather(JSON.parse(weatherJSON)) : defaultCall()
+		let weatherJSON = localStorage.getItem(LOCAL_STORAGE_KEY)
+		weatherJSON == null ? defaultCall() : setWeather(JSON.parse(weatherJSON))
 		//eslint-disable-next-line
 	}, [])
 	//Local Storage Set Method
 
 	useEffect(() => {
 		localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(weather))
-	}, [weather])
 
-	//Default data
-	useEffect(() => {
-		defaultCall()
 		//eslint-disable-next-line
-	}, [])
+	}, [weather])
 
 	const defaultCall = () => {
 		const defaultQuery = 'Chicago'
@@ -40,7 +36,7 @@ const App = () => {
 	const handleFetchWeather = async (query) => {
 		const data = await fetchWeather(query)
 		setWeather(data)
-		// console.log(data)
+		console.log(data)
 	}
 
 	return (

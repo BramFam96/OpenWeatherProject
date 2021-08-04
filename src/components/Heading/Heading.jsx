@@ -1,8 +1,9 @@
+import Location from './Location'
 export default function Heading({ cityName, countryName }) {
 	return (
 		<section className='heading_section'>
-			<h1 className='city'>{cityName}</h1>
-			<sup className='city_sup accent-bg'>{countryName}</sup>
+			<Location cityName={cityName} countryName={countryName} />
+			<h2>Currently:</h2>
 		</section>
 	)
 }

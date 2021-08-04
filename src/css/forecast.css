@@ -1,0 +1,30 @@
+.daily_forecast_container {
+	display: flex;
+	justify-content: space-between;
+	overflow-x: auto;
+}
+.sevenDay_heading {
+	margin-left: 0.5vw;
+}
+.daily_forecast_card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 1rem;
+
+	line-height: 0;
+}
+.daily_forecast_card > * {
+	padding: 0;
+	margin: 10px;
+}
+.daily_forecast_card:hover {
+	border: 2px solid rgba(187, 187, 199, 0.795);
+}
+.forecast_weather_icon {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	line-height: 0;
+}

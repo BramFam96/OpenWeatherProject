@@ -6,6 +6,7 @@ import Heading from './Heading/Heading'
 // import Alert from './Alert'
 import TempSection from './TempSection/TempSection'
 import WeatherDetails from './WeatherDetails/WeatherDetails'
+import ForecastContainer from './Forecast/ForecastContainer'
 
 function WeatherCard({ weatherObj }) {
 	const [forecast, setForecast] = useState({})
@@ -19,8 +20,9 @@ function WeatherCard({ weatherObj }) {
 		const forecastCoords = await coord
 		const { lat, lon } = forecastCoords
 		const forecastData = await fetchForecast(lat, lon)
-		// console.log(forecastData)
+
 		setForecast(forecastData)
+		console.log(forecastData)
 	}
 
 	const { name, sys, main, weather, wind, coord } = weatherObj
@@ -37,13 +39,13 @@ function WeatherCard({ weatherObj }) {
 			{/* Additional Info */}
 			{forecast.minutely && (
 				<WeatherDetails
+					forecastObj={forecast.minutely}
 					humidity={humidity}
 					infoObj={weather}
 					windObj={wind}
-					forecastObj={forecast.minutely}
 				/>
 			)}
-
+			{forecast.daily && <ForecastContainer dailyForecasts={forecast.daily} />}
 			<p style={{ textAlign: 'right', fontSize: '0.75rem' }}>
 				*Temperatures in parenthesis represent how the weather feels
 			</p>
