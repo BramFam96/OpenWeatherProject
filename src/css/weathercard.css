@@ -1,5 +1,5 @@
 .weather_card {
-	width: clamp(300px, 90vw, 1200px);
+	width: clamp(300px, 90vw, 1600px);
 	height: max(1800px, 75%);
 	padding: 0 1rem;
 	background: rgba(10, 0, 0, 0.431);
